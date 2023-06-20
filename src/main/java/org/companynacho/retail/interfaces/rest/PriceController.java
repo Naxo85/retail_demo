@@ -19,6 +19,8 @@ import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 /**
  * Controller class for handling price-related operations.
  * Provides endpoints for retrieving price information based on date, product, and brand.
@@ -29,6 +31,8 @@ import javax.validation.constraints.NotNull;
 public class PriceController {
 
 	private final PriceService priceService;
+	private static final Logger logger = LogManager.getLogger(PriceController.class);
+
 
     @Autowired
     public PriceController(PriceService priceService) {
@@ -44,6 +48,7 @@ public class PriceController {
         Optional<Price> price = priceService.getPriceByDateAndProductAndBrand(date, productId, brandId);
 
         if (price.isPresent()) {
+        	logger.info("PriceController.getPriceByDateAndProductAndBrand: a price has been returned from DB");
             return ResponseEntity.ok(price.get());
         } else {
             return ResponseEntity.notFound().build();
