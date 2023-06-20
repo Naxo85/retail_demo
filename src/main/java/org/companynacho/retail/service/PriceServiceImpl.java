@@ -14,12 +14,8 @@ import java.util.Optional;
 @Service
 public class PriceServiceImpl implements PriceService {
 
-    private final PriceRepository priceRepository;
-
     @Autowired
-    public PriceServiceImpl(PriceRepository priceRepository) {
-        this.priceRepository = priceRepository;
-    }
+    private  PriceRepository priceRepository;
 
     /**
      * Retrieves the price based on the specified date, product ID, and brand ID.

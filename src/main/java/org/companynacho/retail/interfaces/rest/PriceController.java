@@ -30,10 +30,10 @@ import org.apache.logging.log4j.Logger;
 @Validated
 public class PriceController {
 
-	private final PriceService priceService;
 	private static final Logger logger = LogManager.getLogger(PriceController.class);
 
-
+	private final PriceService priceService;
+    
     @Autowired
     public PriceController(PriceService priceService) {
         this.priceService = priceService;

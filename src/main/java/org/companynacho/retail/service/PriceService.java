@@ -1,6 +1,7 @@
 package org.companynacho.retail.service;
 
 import org.companynacho.retail.domain.model.Price;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
@@ -8,6 +9,7 @@ import java.util.Optional;
 /**
  * Service interface for retrieving price information.
  */
+@Service
 public interface PriceService {
 
     /**
