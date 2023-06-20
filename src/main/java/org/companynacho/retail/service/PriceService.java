@@ -1,25 +1,23 @@
 package org.companynacho.retail.service;
 
 import org.companynacho.retail.domain.model.Price;
-import org.companynacho.retail.domain.repository.PriceRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 import java.util.Optional;
 
-@Service
-public class PriceService {
+/**
+ * Service interface for retrieving price information.
+ */
+public interface PriceService {
 
-    private final PriceRepository priceRepository;
-
-    @Autowired
-    public PriceService(PriceRepository priceRepository) {
-        this.priceRepository = priceRepository;
-    }
-
-    public Optional<Price> getPriceByDateAndProductAndBrand(LocalDateTime date, Long productId, Long brandId) {
-        return priceRepository.findFirstByBrandIdAndProductIdAndStartDateLessThanEqualAndEndDateGreaterThanEqualOrderByPriorityDesc(brandId, productId, date, date);
-    }
+    /**
+     * Retrieves the price based on the specified date, product ID, and brand ID.
+     *
+     * @param date      The date for which the price is requested.
+     * @param productId The ID of the product.
+     * @param brandId   The ID of the brand.
+     * @return An optional containing the price if found, or an empty optional if not found.
+     */
+    Optional<Price> getPriceByDateAndProductAndBrand(LocalDateTime date, Long productId, Long brandId);
 
 }

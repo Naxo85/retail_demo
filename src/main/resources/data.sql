@@ -1,16 +1,43 @@
+
+-- EL ARCHIVO DATA.SQL ES UN ARCHIVO DE INICIALIZACIÓN DE DATOS QUE SE UTILIZA EN SPRING BOOT CON UNA BASE DE DATOS EMBEBIDA, COMO H2 EN MEMORIA.
+-- EN ESTE ARCHIVO, SE DEFINEN INSTRUCCIONES SQL PARA INSERTAR DATOS DE PRUEBA EN LA BASE DE DATOS DURANTE EL ARRANQUE DE LA APLICACIÓN.
+
+-- Creación de la tabla brands
+--CREATE TABLE brands (
+--  id INT PRIMARY KEY,
+--  name VARCHAR(255)
+--);
+
 -- Crear la tabla "prices"
 --CREATE TABLE prices (
 --  id INT AUTO_INCREMENT PRIMARY KEY,
 --  brand_id INT,
---  start_date TIMESTAMP,
---  end_date TIMESTAMP,
+--  start_date DATETIME,
+--  end_date DATETIME,
 --  price_list INT,
 --  product_id INT,
 --  priority INT,
---  price DOUBLE,
---  currency VARCHAR(255)
+--  PRICE DECIMAL(19, 2),
+--  currency VARCHAR(3)
 --);
 
+-- Añadir foreign key a la columna brand_id en la tabla prices
+--ALTER TABLE prices
+--ADD CONSTRAINT fk_brand_id
+--FOREIGN KEY (brand_id) REFERENCES brands(id);
+
+-- Inserción de las marcas
+INSERT INTO brands (id, name)
+VALUES
+  (1, 'ZARA'),
+  (2, 'Pull&Bear'),
+  (3, 'Massimo Dutti'),
+  (4, 'Bershka'),
+  (5, 'Stradivarius'),
+  (6, 'Oysho'),
+  (7, 'Zara Home'),
+  (8, 'Uterqüe'); 
+  
 -- Insertar datos de ejemplo en la tabla "prices"
 INSERT INTO prices (brand_id, start_date, end_date, price_list, product_id, priority, price, curr)
 VALUES
