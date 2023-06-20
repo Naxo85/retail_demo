@@ -3,3 +3,4 @@
 .settings/
 target/**
 HELP.md
+mvnw*
