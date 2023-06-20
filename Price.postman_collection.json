@@ -1,0 +1,319 @@
+{
+	"info": {
+		"_postman_id": "2edc9e57-f665-4582-8087-25a7016f69d1",
+		"name": "Price",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 19 de junio de 2023 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T10:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 12345 de la marca 1 (Zara) el 19 de junio de 2023 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T10:00:00&productId=12345&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "12345"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 24680 de la marca 2 (Pull&Bear) el 19 de junio de 2023 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T10:00:00&productId=24680&brandId=2",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "24680"
+						},
+						{
+							"key": "brandId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 13579 de la marca 3 (Massimo Dutti) el 19 de junio de 2023 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T10:00:00&productId=13579&brandId=3",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "13579"
+						},
+						{
+							"key": "brandId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 56789 de la marca 4 (Bershka) el 19 de junio de 2023 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T10:00:00&productId=56789&brandId=4",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "56789"
+						},
+						{
+							"key": "brandId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 98765 de la marca 5 (Stradivarius) el 19 de junio de 2023 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T10:00:00&productId=98765&brandId=5",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "98765"
+						},
+						{
+							"key": "brandId",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 18 de junio de 2023 a las 3:30 p.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-18T15:30:00&productId=35455&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-18T15:30:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 24680 de la marca 2 (Pull&Bear) el 20 de junio de 2023 a las 12:00 p.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-20T12:00:00&productId=24680&brandId=2",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-20T12:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "24680"
+						},
+						{
+							"key": "brandId",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 13579 de la marca 3 (Massimo Dutti) el 19 de junio de 2023 a las 6:30 p.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T18:30:00&productId=13579&brandId=3",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T18:30:00"
+						},
+						{
+							"key": "productId",
+							"value": "13579"
+						},
+						{
+							"key": "brandId",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 56789 de la marca 4 (Bershka) el 19 de junio de 2023 a las 10:45 p.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2023-06-19T22:45:00&productId=56789&brandId=4",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2023-06-19T22:45:00"
+						},
+						{
+							"key": "productId",
+							"value": "56789"
+						},
+						{
+							"key": "brandId",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
