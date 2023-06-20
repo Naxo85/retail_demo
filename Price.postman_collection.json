@@ -37,12 +37,12 @@
 			"response": []
 		},
 		{
-			"name": "Consulta el precio para el producto con ID 12345 de la marca 1 (Zara) el 19 de junio de 2023 a las 10:00 a.m.",
+			"name": "Consulta el precio para el producto con ID 12345 de la marca 1 (Zara) el 10 de junio de 2023 a las 10:00 a.m.",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{localhost}}/prices?date=2023-06-19T10:00:00&productId=12345&brandId=1",
+					"raw": "{{localhost}}/prices?date=2023-06-10T10:00:00&productId=12345&brandId=1",
 					"host": [
 						"{{localhost}}"
 					],
@@ -52,7 +52,7 @@
 					"query": [
 						{
 							"key": "date",
-							"value": "2023-06-19T10:00:00"
+							"value": "2023-06-10T10:00:00"
 						},
 						{
 							"key": "productId",
