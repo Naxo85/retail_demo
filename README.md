@@ -1,64 +1,64 @@
-# Retail_Demo - Aplicación de Consulta de Precios
+# Retail_Demo - Price Query Application
 
-La Retail_Demo es una aplicación de consulta de precios diseñada para proporcionar información sobre los precios finales y tarifas aplicables a productos de una cadena en un rango de fechas determinado. La aplicación está desarrollada en Spring Boot y utiliza una base de datos en memoria H2 para almacenar los datos. A continuación se detallan los requisitos y las instrucciones para ejecutar y probar la aplicación.
+The Retail_Demo is a price query application designed to provide information about final prices and applicable rates for products within a specific date range of a retail chain. The application is developed using Spring Boot and utilizes an in-memory H2 database to store the data. Below are the requirements and instructions to build, run, and test the application.
 
-## Requisitos
+## Requirements
 
-- Java Development Kit (JDK) 11 o superior.
-- Maven para compilar y ejecutar la aplicación.
-- Git para clonar el repositorio de la aplicación.
+- Java Development Kit (JDK) 11 or higher.
+- Maven to compile and run the application.
+- Git to clone the application repository.
 
-## Instrucciones
+## Instructions
 
-1. Clonar el repositorio de la aplicación desde GitHub:
+1. Clone the application repository from GitHub:
 
    ```bash
    git clone https://github.com/Naxo85/retail_demo.git
    ```
 
-2. Navegar al directorio del proyecto:
+2. Navigate to the project directory:
 
    ```bash
    cd retail_demo
    ```
 
-3. Compilar la aplicación usando Maven:
+3. Build the application using Maven:
 
    ```bash
    mvn clean package
    ```
 
-4. Ejecutar la aplicación:
+4. Run the application:
 
    ```bash
    java -jar target/retail-0.0.1-SNAPSHOT.jar
    ```
 
-5. La aplicación estará disponible en el siguiente endpoint REST:
+5. The application will be available at the following REST endpoint:
 
    ```
-   GET /prices?date={fecha}&productId={idProducto}&brandId={idCadena}
+   GET /prices?date={date}&productId={productId}&brandId={brandId}
    ```
 
-   - `{fecha}`: Fecha de aplicación en formato "yyyy-MM-dd HH:mm:ss".
-   - `{idProducto}`: Identificador del producto.
-   - `{idCadena}`: Identificador de la cadena (marca).
+   - `{date}`: Application date in "yyyy-MM-dd HH:mm:ss" format.
+   - `{productId}`: Product identifier.
+   - `{brandId}`: Chain (brand) identifier.
 
-6. Realizar las siguientes peticiones al servicio para validar los resultados:
+6. Perform the following requests to the service to validate the results:
 
-   - **Test 1:** Petición a las 10:00 del día 14 del producto 35455 para la cadena 1 (ZARA).
-   - **Test 2:** Petición a las 16:00 del día 14 del producto 35455 para la cadena 1 (ZARA).
-   - **Test 3:** Petición a las 21:00 del día 14 del producto 35455 para la cadena 1 (ZARA).
-   - **Test 4:** Petición a las 10:00 del día 15 del producto 35455 para la cadena 1 (ZARA).
-   - **Test 5:** Petición a las 21:00 del día 16 del producto 35455 para la cadena 1 (ZARA).
+   - **Test 1:** Request at 10:00 on day 14 for product 35455 and chain 1 (ZARA).
+   - **Test 2:** Request at 16:00 on day 14 for product 35455 and chain 1 (ZARA).
+   - **Test 3:** Request at 21:00 on day 14 for product 35455 and chain 1 (ZARA).
+   - **Test 4:** Request at 10:00 on day 15 for product 35455 and chain 1 (ZARA).
+   - **Test 5:** Request at 21:00 on day 16 for product 35455 and chain 1 (ZARA).
 
-## Detalles de la Base de Datos
+## Database Details
 
-La base de datos en memoria H2 está preconfigurada con datos de ejemplo. Tiene dos tablas: BRAND y PRICES. 
-Entre los datos de ejemplo encontramos las siguientes entradas en la tabla PRICES:
+The in-memory H2 database is preconfigured with example data and has two tables: BRAND and PRICES. 
+Among the example data, the following entries exist in the PRICES table:
 
 ```
-Tabla: PRICES
+Table: PRICES
 
 | BRAND_ID | START_DATE               | END_DATE                 | PRICE_LIST | PRODUCT_ID | PRIORITY | PRICE | CURR |
 |----------|--------------------------|--------------------------|------------|------------|----------|-------|------|
@@ -69,7 +69,8 @@ Tabla: PRICES
 ```
 
 
-## Notas adicionales
+## Additional Notes
 
-- Si deseas modificar los datos de ejemplo o agregar nuevos campos a la tabla, puedes hacerlo en el archivo `data.sql` dentro de la carpeta de resources del proyecto, y a continuación relanzar la aplicación
-- Si deseas abrir la app en un IDE (por ejemplo eclipse), es necesario instalar [Lombok](https://projectlombok.org/) en el mismo
+- If you want to modify the example data or add new fields to the table, you can do so in the `data.sql` file inside the project's resources folder and then relaunch the application.
+- If you want to open the app in an IDE (e.g., Eclipse), it is necessary to install [Lombok](https://projectlombok.org/) in the IDE.
+- Additionally, there is an exported Postman file (Price.postman_collection.json) available in the root folder of the project repository. This file contains pre-configured queries that you can import into Postman to test the application's functionality easily.
