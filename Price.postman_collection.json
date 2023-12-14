@@ -6,6 +6,161 @@
 	},
 	"item": [
 		{
+			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 14 de junio de 2020 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2020-06-14T10:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-06-14T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 14 de junio de 2020 a las 16:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2020-06-14T16:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-06-14T16:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 14 de junio de 2020 a las 21:00 a.m. Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2020-06-14T21:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-06-14T21:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 15 de junio de 2020 a las 10:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2020-06-15T10:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-06-15T10:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 16 de junio de 2020 a las 21:00 a.m.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/prices?date=2020-06-16T21:00:00&productId=35455&brandId=1",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"prices"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "2020-06-16T21:00:00"
+						},
+						{
+							"key": "productId",
+							"value": "35455"
+						},
+						{
+							"key": "brandId",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Consulta el precio para el producto con ID 35455 de la marca 1 (Zara) el 19 de junio de 2020 a las 10:00 a.m.",
 			"request": {
 				"method": "GET",
